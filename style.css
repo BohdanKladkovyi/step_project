@@ -217,6 +217,9 @@ a:visited:hover {
     padding: 60px 0 30px;
 
 }
+.service-block-navigation-menu ul.service-block-navigation-menu-link li.active a{
+    color: #fff;
+}
 .service-block-navigation-menu-link {
     border: 1px solid #ebebeb;
 }
