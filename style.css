@@ -15,7 +15,7 @@
 }
 
 .header-wrapper {
-    background-color: rgba(94, 93, 88, 0.8);
+    background-color: rgba(94, 93, 88, 0.95);
     height: 120px;
     position: fixed;
     width: 100%;
@@ -58,14 +58,6 @@ a {
 a:hover {
     color: #18cfab;
 }
-
-/*a:visited {*/
-/*    color: #b8b8b8;*/
-/*}*/
-
-/*a:visited:hover {*/
-/*    color: #18cfab;*/
-/*}*/
 
 .header-menu-item {
     font-size: 13px;
@@ -185,12 +177,12 @@ a:hover {
 }
 
 .service-block {
-    padding: 100px 0;
+    margin: 100px 0;
     color: #4e4e4e;
     text-align: center;
 }
 
-.service-block-container {
+.service-block-wrapper {
     max-width: 1160px;
     margin: auto;
 }
@@ -215,7 +207,6 @@ a:hover {
 
 .service-block-navigation-menu {
     padding: 60px 0 30px;
-
 }
 
 .service-block-navigation-menu ul.service-block-navigation-menu-link li.active a{
@@ -257,14 +248,10 @@ a:hover {
     content: " ";
     position: absolute;
     pointer-events: none;
-    border-color: rgba(136, 183, 213, 0);
+    border-color: #ebecec;
     border-top-color: #20bc9d;
     border-width: 10px;
     margin-left: -10px;
-
-}
-
-.service-block-content {
 
 }
 
@@ -278,4 +265,62 @@ a:hover {
     text-align: justify;
     margin-left: 15px;
     display: inline-block;
+}
+
+.purchase-block {
+    background: #40474b url(images/sections-background/section-2.jpg) no-repeat center center;
+    padding: 120px 0;
+    text-align: center;
+    background-size: cover;
+}
+
+.purchase-block-wrapper {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.purchase-block-text {
+    font-size: 40px;
+    line-height: 40px;
+    color: #18cfab;
+    text-transform: uppercase;
+}
+
+.purchase-block-text-small {
+    color: #d8d8d8;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.purchase-btn {
+    outline: 0;
+    border: none;
+    font-size: 13px;
+    width: 166px;
+    height: 60px;
+    color: #fff;
+    background-color: #18cfab;
+    border-radius: 5px;
+    border-top: 5px solid #ffffff;
+    margin: 75px 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.purchase-btn:hover {
+    background-color: #00cbf6;
+    cursor: pointer;
+}
+
+.work-block-wrapper {
+    max-width: 1160px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.work-block-title {
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 30px;
 }
