@@ -242,6 +242,7 @@ ul.service-block-navigation-menu-link {
     cursor: pointer;
     position: relative;
     border-right: 1px solid #20bc9d;
+    z-index: -1;
     /*color: #ffffff;*/
 }
 
@@ -252,7 +253,9 @@ ul.service-block-navigation-menu-link {
     content: " ";
     position: absolute;
     pointer-events: none;
-    border-color: #ebecec;
+    outline: none;
+    overflow: hidden;
+    /* border-color: #ebecec; */
     border-top-color: #20bc9d;
     border-width: 10px;
     margin-left: -10px;
@@ -261,7 +264,7 @@ ul.service-block-navigation-menu-link {
 .service-block-content {
     display: flex;
     
->>>>>>> 8b20465ad9ee4c793cbdfc802593d6993ab6490b
+
 }
 
 /* .service-block-content-image {
@@ -269,12 +272,12 @@ ul.service-block-navigation-menu-link {
 } */
 
 .service-block-content-text {
-
+    display: flex;
     line-height: 24px;
     text-align: justify;
     margin-left: 15px;
 
-    display: inline-block;
+    
 }
 
 .purchase-block {
@@ -340,4 +343,68 @@ ul.service-block-navigation-menu-link {
     margin: 0 0 0  15px;
     display: block;
 }
+
+/* Slider */
+
+.slider-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+  }
+  .slider .slider-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    transition: transform 0.35s ease-in-out;
+  }
+  .slider .slider-items-container img {
+    width: 100vw;
+    max-width: 640px;
+    display: block;
+  }
+  .slider .controls {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 35px;
+  }
+  .slider .controls a {
+    color: #333;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+  }
+  .slider .controls a:hover {
+    color: #888;
+  }
+  .slider .dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .slider .dots .dot {
+    width: 10px;
+    height: 10px;
+    background: #333;
+    transition: 0.15s ease-in-out;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 20px;
+  }
+  .slider .dots .dot.active {
+    background: #888;
+  }
+  
 
