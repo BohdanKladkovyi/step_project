@@ -59,13 +59,13 @@ a:hover {
     color: #18cfab;
 }
 
-a:visited {
-    color: #b8b8b8;
-}
+/*a:visited {*/
+/*    color: #b8b8b8;*/
+/*}*/
 
-a:visited:hover {
-    color: #18cfab;
-}
+/*a:visited:hover {*/
+/*    color: #18cfab;*/
+/*}*/
 
 .header-menu-item {
     font-size: 13px;
@@ -217,7 +217,7 @@ a:visited:hover {
     padding: 60px 0 30px;
 
 }
-.service-block-navigation-menu-link {
+ul.service-block-navigation-menu-link {
     border: 1px solid #ebebeb;
 }
 
@@ -228,6 +228,13 @@ a:visited:hover {
     padding: 25px 0;
     border-right: 1px solid #ebebeb;
 }
+/*.service-block-navigation .service-block-navigation-menu li a:active{*/
+/*    color: #fff;*/
+/*}*/
+#tabs-nav li a:active {
+   color: white;
+}
+
 
 .active {
     transition: all 0.5s;
@@ -235,7 +242,7 @@ a:visited:hover {
     cursor: pointer;
     position: relative;
     border-right: 1px solid #20bc9d;
-    color: white;
+    /*color: #ffffff;*/
 }
 
 .active::after {
@@ -249,6 +256,7 @@ a:visited:hover {
     border-top-color: #20bc9d;
     border-width: 10px;
     margin-left: -10px;
+
 }
 
 .service-block-content {
