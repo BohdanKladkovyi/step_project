@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Step Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+<!--    <script src="script.js"></script>-->
+<!--    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+    </script>
+
+</head>
+<body>
+    <header class="header-background">
+        <div class="header-wrapper">
+            <div class="header-logo">
+                <div class="main-logo">H</div>
+                <div class="header-logo-text"> the<span class="green-part">Ham</span></div>
+            </div>
+            <nav class="header-menu">
+                <div class="header-menu-item"><a href="#home">Home</a></div>
+                <div class="header-menu-item"><a href="#about">About</a></div>
+                <div class="header-menu-item"><a href="#skills"> Skills</a> </div>
+                <div class="header-menu-item"><a href="#service">Service</a> </div>
+                <div class="header-menu-item"><a href="#work">Work</a></div>
+                <div class="header-menu-item"><a href="#testimonial">Testimonial</a></div>
+                <div class="header-menu-item"><a href="#blog">Blog</a></div>
+                <div class="header-menu-item"><a href="#team">Team</a></div>
+                <div class="header-menu-item"><a href="#contact">Contact</a></div>
+                <i class="fas fa-search header-menu-item"></i>
+            </nav>
+        </div>
+        <div id="home" class="header-title">
+            <div class="header-title-text">The Ham is <span class="green-part">Wordpress theme</span></div>
+            <div class="header-title-text-big">We are creative</div>
+            <div class="header-title-text-small">Just Buy And Enjoy These Awesome Features</div>
+            <button class="explore">Explore Now</button>
+            <button class="purchase">Purchase Now</button>
+        </div>
+    </header>
+    <section class="about-block" id="about">
+        <div class="about-block-quoter about-block-black">
+                 <img class="about-block-icon" src="images/icons/option.png" alt="option">
+                 <div class="about-block-text">Different theme option</div>
+           </div>
+        <div class="about-block-quoter">
+            <img class="about-block-icon" src="images/icons/custom.png" alt="custom">
+            <div class="about-block-text">fully customizable</div>
+        </div>
+        <div class="about-block-quoter about-block-black">
+                <img class="about-block-icon" src="images/icons/support.png" alt="support">
+                <div class="about-block-text">unlimited support</div>
+        </div>
+        <div class="about-block-quoter">
+            <img class="about-block-icon" src="images/icons/device.png" alt="device">
+            <div class="about-block-text">responsive all device</div>
+        </div>
+    </section>
+    <div class="space"></div>
+    <section class="service-block" id="service">
+        <div class="service-block-container">
+            <div class="service-block-title">Our Services</div>
+            <img class="divider" src="images/icons/lines.png" alt="">
+        </div>
+        <div class="service-block-navigation" id="tabs">
+        <nav class="service-block-navigation-menu">
+            <ul class="service-block-navigation-menu-link">
+                <li class="non-active active"><a href="#tabs-1">Web Design</a></li>
+                <li class="non-active"><a href="#tabs-2">Graphic Design</a></li>
+                <li class="non-active"><a href="#tabs-3">Online Support</a></li>
+                <li class="non-active"><a href="#tabs-4">App Design</a></li>
+                <li class="non-active"><a href="#tabs-5">Online Marketing</a></li>
+                <li class="non-active"><a href="#tabs-6">Seo Service</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="service-block-content">
+            <div class="service-block-content-image">
+                <img src="images/icons/web_design.png" alt="">
+            </div>
+            <div class="service-block-content-text" id="tabs-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum. Deserunt
+                mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adip
+                isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                    officia deserunt mollit anim id est laborum.</p>
+            </div></div>
+        <div>
+            <div class="service-block-content-text" id="tabs-2">
+                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante,
+                    ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla,
+                    massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor.
+                    Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent
+                    in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc.
+                    Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis.
+                    Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare
+                    leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            </div>
+            <div class="service-block-content-text" id="tabs-3">
+                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate,
+                    pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.
+                    Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                    per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque.
+                    Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna.
+                    Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent
+                    blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit,
+                    magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque.
+                    Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor,
+                    tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo.
+                    Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+            </div>
+            <div class="service-block-content-text" id="tabs-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto harum laboriosam omnis
+                    sed similique sit! At beatae consequatur corporis eveniet, incidunt maiores minus, necessitatibus, obcaecati
+                    odit quia rem voluptatibus.
+                </p>
+            </div>
+            <div class="service-block-content-text" id="tabs-5">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto harum laboriosam omnis
+                    sed similique sit! At beatae consequatur corporis eveniet, incidunt maiores minus, necessitatibus, obcaecati
+                    odit quia rem voluptatibus.
+                </p>
+            </div>
+            <div class="service-block-content-text" id="tabs-6">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto harum laboriosam omnis
+                    sed similique sit! At beatae consequatur corporis eveniet, incidunt maiores minus, necessitatibus, obcaecati
+                    odit quia rem voluptatibus.
+                </p>
+            </div>
+        </div>
+<!--        <div id="tabs">-->
+<!--            <ul>-->
+<!--                <li><a href="#tabs-1">Nunc tincidunt</a></li>-->
+<!--                <li><a href="#tabs-2">Proin dolor</a></li>-->
+<!--                <li><a href="#tabs-3">Aenean lacinia</a></li>-->
+<!--                <li><a href="#tabs-4">Denni Boi</a></li>-->
+<!--            </ul>-->
+<!--            <div id="tabs-1">-->
+<!--                <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>-->
+<!--            </div>-->
+<!--            <div id="tabs-2">-->
+<!--                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>-->
+<!--            </div>-->
+<!--            <div id="tabs-3">-->
+<!--                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>-->
+<!--                <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>-->
+<!--            </div>-->
+<!--            <div id="tabs-4">-->
+<!--                <p>-->
+<!--                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto harum laboriosam omnis-->
+<!--                    sed similique sit! At beatae consequatur corporis eveniet, incidunt maiores minus, necessitatibus, obcaecati-->
+<!--                    odit quia rem voluptatibus.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+    </section>
+    <section>
+<!--        Кнопка Load more в секции Our amazing work имитирует подгрузку с сервера новых картинок.
+ При ее нажатии в секции снизу должно добавиться еще 12 картинок (изображения можно взять любые). Всего 36 картинок.
+  После этого кнопка исчезает. Добавить лоадер с анимацией-->
+    </section>
+</body>
+</html>

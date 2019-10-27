@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.header-background {
+    background-image: url("images/sections-background/section-1(header).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1563px;
+    min-width: 1200px;
+    max-height: 1000px;
+}
+
+.header-wrapper {
+    background-color: rgba(94, 93, 88, 0.8);
+    height: 120px;
+    position: fixed;
+    width: 100%;
+}
+
+.header-logo {
+    display: inline-block;
+    margin: 28px 0 0 8%;
+}
+
+.main-logo {
+    background-image: url("images/icons/header-logo.png");
+    background-repeat: no-repeat;
+    height: 67px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 13px 0 13px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-logo-text {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+}
+
+.header-menu{
+    float: right;
+    margin: 50px 8% 0 0;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #b8b8b8;
+}
+
+a:hover {
+    color: #18cfab;
+}
+
+a:visited {
+    color: #b8b8b8;
+}
+
+a:visited:hover {
+    color: #18cfab;
+}
+
+.header-menu-item {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #b8b8b8;
+    margin: 0 8px;
+}
+
+.header-menu-item:hover {
+    color: #18cfab;
+    padding-bottom: 52px;
+    border-bottom: 2px solid #18cfab;
+}
+
+.green-part {
+    font-weight: bold;
+    color: #18cfab;
+}
+
+.header-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+.header-title-text {
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 250px;
+}
+
+.header-title-text-big {
+    font-size: 79px;
+    font-weight: bold;
+    padding: 45px 0 35px 0;
+}
+
+.header-title-text-small {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+.explore {
+    outline: 0;
+    border: none;
+    font-size: 13px;
+    width: 166px;
+    height: 60px;
+    color: white;
+    background-color: #18cfab;
+    border-radius: 5px;
+    border-top: 5px solid #ffffff;
+    margin: 140px 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.explore:hover {
+    background-color: #00cbf6;
+    cursor: pointer;
+}
+
+.purchase {
+    outline: 0;
+    border: none;
+    font-size: 13px;
+    width: 166px;
+    height: 60px;
+    color: #fff;
+    background-color: #00cbf6;
+    border-radius: 5px;
+    border-top: 5px solid #ffffff;
+    margin: 140px 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.purchase:hover {
+    background-color: #18cfab;
+    cursor: pointer;
+}
+
+.about-block {
+    width: 100%;
+}
+
+.about-block-quoter {
+    width: 25%;
+    float: left;
+    color: #fff;
+    background-color: #18cfab;
+    text-align: center;
+    border-top: 7px solid #fff;
+    min-height: 365px;
+}
+
+.about-block-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 45px;
+    font-weight: bold;
+}
+
+.about-block-black {
+    color: #18cfab;
+    background-color: #1c2a33;
+    border-top: 7px solid #18cfab;
+}
+
+.about-block-icon {
+    margin-top: 80px;
+}
+
+.service-block {
+    padding: 100px 0;
+    color: #4e4e4e;
+    text-align: center;
+}
+
+.service-block-container {
+    max-width: 1160px;
+    margin: auto;
+}
+
+.service-block-title {
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 30px;
+}
+.space {
+    height: 365px;
+}
+
+.divider {
+    margin: 0 auto;
+}
+
+.service-block-navigation {
+    width: 1160px;
+    display: inline-block;
+}
+
+.service-block-navigation-menu {
+    padding: 60px 0 30px;
+
+}
+.service-block-navigation-menu-link {
+    border: 1px solid #ebebeb;
+}
+
+.non-active {
+    list-style: none;
+    width: 16.66%;
+    float: left;
+    padding: 25px 0;
+    border-right: 1px solid #ebebeb;
+}
+
+.active {
+    transition: all 0.5s;
+    background-color: #20bc9d;
+    cursor: pointer;
+    position: relative;
+    border-right: 1px solid #20bc9d;
+    color: white;
+}
+
+.active::after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #20bc9d;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.service-block-content {
+
+}
+
+.service-block-content-image {
+    display: inline-block;
+}
+
+.service-block-content-text {
+
+    line-height: 24px;
+    text-align: justify;
+    margin-left: 15px;
+    display: inline-block;
+}
