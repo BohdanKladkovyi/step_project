@@ -221,7 +221,7 @@ a:visited:hover {
     border: 1px solid #ebebeb;
 }
 
-.non-active {
+.service-block-navigation .service-block-navigation-menu li {
     list-style: none;
     width: 16.66%;
     float: left;
