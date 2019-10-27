@@ -23,8 +23,8 @@ function setSlider(){
 		var $slider = $(this),
 				$itemscontainer = $slider.find(".slider-items-container");
 		
-		if ($itemscontainer.find(".slider-item.active").length == 0){
-			$itemscontainer.find(".slider-item").first().addClass("active");
+		if ($itemscontainer.find(".slider-item.actives").length == 0){
+			$itemscontainer.find(".slider-item").first().addClass("actives");
 		}
 		
 		function setWidth(){
@@ -39,7 +39,7 @@ function setSlider(){
 		}
 		function setTransform(){
 			
-			var $activeItem = $itemscontainer.find(".slider-item.active"),
+			var $activeItem = $itemscontainer.find(".slider-item.actives"),
 					activeItemOffset = $activeItem.offset().left,
 					itemsContainerOffset = $itemscontainer.offset().left,
 					totalOffset = activeItemOffset - itemsContainerOffset
@@ -48,7 +48,7 @@ function setSlider(){
 			
 		}
 		function nextSlide(){
-			var activeItem = $itemscontainer.find(".slider-item.active"),
+			var activeItem = $itemscontainer.find(".slider-item.actives"),
 					activeItemIndex = activeItem.index(),
 					sliderItemTotal = $itemscontainer.find(".slider-item").length,
 					nextSlide = 0;
@@ -63,15 +63,15 @@ function setSlider(){
 					itemContainerOffset = $itemscontainer.offset().left,
 					totalOffset = nextSlideSelect.offset().left - itemContainerOffset
 			
-			$itemscontainer.find(".slider-item.active").removeClass("active");
-			nextSlideSelect.addClass("active");
-			$slider.find(".dots").find(".dot").removeClass("active")
-			$slider.find(".dots").find(".dot").eq(nextSlide).addClass("active");
+			$itemscontainer.find(".slider-item.actives").removeClass("actives");
+			nextSlideSelect.addClass("actives");
+			$slider.find(".dots").find(".dot").removeClass("actives")
+			$slider.find(".dots").find(".dot").eq(nextSlide).addClass("actives");
 			$itemscontainer.css({"transform": "translate( -"+totalOffset+"px, 0px)"})
 			
 		}
 		function prevSlide(){
-			var activeItem = $itemscontainer.find(".slider-item.active"),
+			var activeItem = $itemscontainer.find(".slider-item.actives"),
 					activeItemIndex = activeItem.index(),
 					sliderItemTotal = $itemscontainer.find(".slider-item").length,
 					nextSlide = 0;
@@ -86,15 +86,15 @@ function setSlider(){
 					itemContainerOffset = $itemscontainer.offset().left,
 					totalOffset = nextSlideSelect.offset().left - itemContainerOffset
 			
-			$itemscontainer.find(".slider-item.active").removeClass("active");
-			nextSlideSelect.addClass("active");
-			$slider.find(".dots").find(".dot").removeClass("active")
-			$slider.find(".dots").find(".dot").eq(nextSlide).addClass("active");
+			$itemscontainer.find(".slider-item.actives").removeClass("actives");
+			nextSlideSelect.addClass("actives");
+			$slider.find(".dots").find(".dot").removeClass("actives")
+			$slider.find(".dots").find(".dot").eq(nextSlide).addClass("actives");
 			$itemscontainer.css({"transform": "translate( -"+totalOffset+"px, 0px)"})
 			
 		}
 		function makeDots(){
-			var activeItem = $itemscontainer.find(".slider-item.active"),
+			var activeItem = $itemscontainer.find(".slider-item.actives"),
 					activeItemIndex = activeItem.index(),
 					sliderItemTotal = $itemscontainer.find(".slider-item").length;
 			
@@ -102,7 +102,7 @@ function setSlider(){
 				$slider.find(".dots").append("<div class='dot'></div>")
 			}
 			
-			$slider.find(".dots").find(".dot").eq(activeItemIndex).addClass("active")
+			$slider.find(".dots").find(".dot").eq(activeItemIndex).addClass("actives")
 			
 		}
 		
@@ -133,10 +133,10 @@ function setSlider(){
 			var dotIndex = $(this).index(),
 					totalOffset = $itemscontainer.find(".slider-item").eq(dotIndex).offset().left - $itemscontainer.offset().left;
 					
-			$itemscontainer.find(".slider-item.active").removeClass("active");
-			$itemscontainer.find(".slider-item").eq(dotIndex).addClass("active");
-			$slider.find(".dots").find(".dot").removeClass("active");
-			$(this).addClass("active")
+			$itemscontainer.find(".slider-item.actives").removeClass("actives");
+			$itemscontainer.find(".slider-item").eq(dotIndex).addClass("actives");
+			$slider.find(".dots").find(".dot").removeClass("actives");
+			$(this).addClass("actives")
 			
 			$itemscontainer.css({"transform": "translate( -"+totalOffset+"px, 0px)"})
 			
