@@ -213,6 +213,7 @@ a:visited:hover {
     display: inline-block;
 }
 
+
 .service-block-navigation-menu {
     padding: 60px 0 30px;
 
@@ -220,8 +221,9 @@ a:visited:hover {
 .service-block-navigation-menu ul.service-block-navigation-menu-link li.active a{
     color: #fff;
 }
-.service-block-navigation-menu-link {
+ul.service-block-navigation-menu-link {
     border: 1px solid #ebebeb;
+    padding: 0px 0px 70px 1px;
 }
 
 .service-block-navigation .service-block-navigation-menu li {
@@ -255,17 +257,22 @@ a:visited:hover {
 }
 
 .service-block-content {
-
+    display: flex;
+    
 }
 
-.service-block-content-image {
+/* .service-block-content-image {
     display: inline-block;
-}
+} */
 
 .service-block-content-text {
 
     line-height: 24px;
     text-align: justify;
     margin-left: 15px;
-    display: inline-block;
+    display: flex;
+}
+.service-block-content-text p {
+    margin: 0 0 0  15px;
+    display: block;
 }
